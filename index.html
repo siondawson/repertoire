@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ff2fe9fdbb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>String Quartet Repertoire</title>    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="container-fluid navalert-container">
+            <div class="container-fluid alert-container">
+                <div class="row d-none d-lg-block">
+                    <div class="col-12">
+                    </div>
+                </div>
+             </div>
+             <nav class="navbar-home navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white logo-font" href="index.html">Serenade Strings</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" href="repertoire.html">Repertoire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="faq.html">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>        
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid" id="repertoire-banner">
+        </div>
+
+        <div class="container pt-5">
+            <div class="row pb-5">
+                <div class="col-12 text-center font-montserrat">
+                    <h1>Repertoire</h1>
+                    <p>Want us to play something that's not listed? Just let us know. Requests are included in every booking!</p>
+                </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="rock-pop-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rock-pop" aria-expanded="true" aria-controls="rock-pop">
+                            Rock/Pop
+                        </button>
+                    </h2>
+                    <div id="rock-pop" class="accordion-collapse collapse" aria-labelledby="rock-pop-header" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul id="rock-pop-list"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="classical-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#classical" aria-expanded="false" aria-controls="classical">
+                            Classical
+                        </button>
+                    </h2>
+                    <div id="classical" class="accordion-collapse collapse" aria-labelledby="classical-header" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul id="classical-list"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="film-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#film" aria-expanded="false" aria-controls="film">
+                            Film/ TV/ Videogames
+                        </button>
+                    </h2>
+                    <div id="film" class="accordion-collapse collapse" aria-labelledby="film-header" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul id="film-list"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="jazz-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jazz" aria-expanded="false" aria-controls="jazz">
+                            Jazz
+                        </button>
+                    </h2>
+                    <div id="jazz" class="accordion-collapse collapse" aria-labelledby="jazz-header" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul id="jazz-list"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="traditional-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#traditional" aria-expanded="false" aria-controls="traditional">
+                            Traditional/ Folk
+                        </button>
+                    </h2>
+                    <div id="traditional" class="accordion-collapse collapse" aria-labelledby="traditional" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul id="traditional-list"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="tangos-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tango" aria-expanded="false" aria-controls="tango">
+                            Tangos
+                        </button>
+                    </h2>
+                    <div id="tango" class="accordion-collapse collapse" aria-labelledby="tango" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul id="tango-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+    </footer>
+    
+
+    <script src="repertoire.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJSJ61NZVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HJSJ61NZVF');
+    </script>
+</body>
+</html>
