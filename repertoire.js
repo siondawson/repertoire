@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(`Fetching data from ${url}`);  // Debugging: Log URL being fetched
             for (const artist in data) {
                 if (data.hasOwnProperty(artist)) {
                     const items = data[artist].songs;
@@ -69,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const audio = new Audio(audioUrl);
             audio.play()
                 .then(() => {
-                    console.log(`Playing: ${audioUrl}`);  // Debugging: Log playing audio URL
                     currentlyPlayingAudio = {
                         audio: audio,
                         listItem: listItem
