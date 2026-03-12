@@ -1,7 +1,7 @@
 let currentlyPlayingAudio = null;
 
 // Base URL for audio files
-const audioBaseURL = 'https://raw.githubusercontent.com/siondawson/serenade-strings/main/assets/audio/';
+const audioBaseURL = 'https://raw.githubusercontent.com/siondawson/serenade-strings/main/src/assets/audio/';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Get references to the list elements
@@ -38,13 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error fetching data:', error));
     }
 
-    // Fetch and populate each category
-    fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/assets/json/pop-rock-rep.json', rockPopList);
-    fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/assets/json/classical-rep.json', classicalList);
-    fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/assets/json/film-musical-games-rep.json', filmList);
-    fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/assets/json/jazz-rep.json', jazzList);
-    fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/assets/json/traditional-rep.json', traditionalList);
-    fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/assets/json/tango-rep.json', tangoList);
+        // Fetch and populate each category
+        fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/src/_data/json/pop-rock-rep.json', rockPopList);
+        fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/src/_data/json/classical-rep.json', classicalList);
+        fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/src/_data/json/film-musical-games-rep.json', filmList);
+        fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/src/_data/json/jazz-rep.json', jazzList);
+        fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/src/_data/json/traditional-rep.json', traditionalList);
+        fetchAndPopulate('https://raw.githubusercontent.com/siondawson/serenade-strings/main/src/_data/json/tango-rep.json', tangoList);
+
 
     function toggleAudio(listItem, audioUrl) {
         const icon = listItem.querySelector('i');
